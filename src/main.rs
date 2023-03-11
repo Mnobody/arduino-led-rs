@@ -49,10 +49,7 @@ fn main() -> ! {
                 arduino_hal::delay_ms(1000);
             }
 
-        } else {
-
             strip.write(self::colors_off().iter().cloned()).ok();
-
         }
         
         arduino_hal::delay_ms(50);
@@ -79,5 +76,5 @@ fn colors() -> [RGB8; STRIP_LENGTH] {
 
 fn colors_off() -> [RGB8; STRIP_LENGTH] {
 
-    return  [RGB8::default(); STRIP_LENGTH];
+    return [RGB8::default(); STRIP_LENGTH];
 }
