@@ -4,6 +4,9 @@
 - Arduino NANO 3.0 v3 ATMEGA328P CH340 16MHz
 - WS2812B
 - PIR HC-SR501
+- R1CH5VLL Relay
+- PSL3P Light Sensor
+- TTP223 Touch Button
 
 #### Behavior
 
