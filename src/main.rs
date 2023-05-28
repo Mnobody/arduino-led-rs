@@ -34,7 +34,7 @@ fn main() -> ! {
 
             let mut colors = self::colors();
             
-            let seconds = 60;
+            let seconds = 90;
 
             for i in 0 .. seconds {
 

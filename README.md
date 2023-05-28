@@ -11,7 +11,7 @@
 - 10 LEDs light up pink color, the rest 20 red.
 - Pink LEDs move to the right every second.
 - The last 3 LEDs will gradually turn white before the led strip turns off.
-- LED strip lights up for 60 seconds afrter motion is detected.
+- LED strip lights up for 90 seconds afrter motion is detected.
 
 ---
 
