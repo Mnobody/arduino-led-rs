@@ -19,7 +19,7 @@ fn main() -> ! {
     let motion_sensor = pins.d3.into_pull_up_input();
     let mut relay = pins.d6.into_output();
 
-    relay.set_low();
+    relay.set_high();
 
 //    let mut countdown = COUNTDOWN;
 
@@ -30,13 +30,13 @@ fn main() -> ! {
 
         if motion_sensor.is_high() {
 //            countdown = COUNTDOWN;
-            relay.set_high();
+            relay.set_low();
 
             for _ in 1 .. MINUTES {
                 arduino_hal::delay_ms(MINUTE);
             }
 
-            relay.set_low();
+            relay.set_high();
         }
 
 //        arduino_hal::delay_ms(DELAY);
